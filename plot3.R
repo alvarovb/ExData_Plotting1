@@ -17,7 +17,7 @@ plot3 <- function() {
     
     dt$Date <- strptime(paste(dt$Date, dt$Time), "%d/%m/%Y %H:%M:%S")
    
-    png(file = "plot3.png")
+    png(file = "plot3.png", width = 480, height = 480)
     
     plot(dt$Date, dt$Sub_metering_1, type = "n",  ylab = "Energy sub metering", xlab = "", 
          main  ="", cex.lab = 0.7)

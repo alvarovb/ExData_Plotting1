@@ -15,7 +15,7 @@ plot2 <- function() {
    
     dt$Date <- strptime(paste(dt$Date, dt$Time), "%d/%m/%Y %H:%M:%S")
    
-    png(file = "plot2.png")
+    png(file = "plot2.png", width = 480, height = 480)
     
     plot(dt$Date, dt$Global_active_power, type="l", 
          ylab = "Global Activity Power(Kilowatts)", xlab = "", 

@@ -19,7 +19,7 @@ plot4 <- function() {
     dt$Global_reactive_power <- as.numeric(as.character(dt$Global_reactive_power))
     dt$Date <- strptime(paste(dt$Date, dt$Time), "%d/%m/%Y %H:%M:%S")
     
-    png(file = "plot4.png")
+    png(file = "plot4.png", width = 480, height = 480)
     par(mfrow = c(2, 2))
     plot(dt$Date, dt$Global_active_power, type="l", 
          ylab = "Global Activity Power(Kilowatts)", xlab = "", 

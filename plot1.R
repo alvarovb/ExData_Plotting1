@@ -12,7 +12,7 @@ plot1 <- function() {
   
     dt$Global_active_power <- as.numeric(as.character(dt$Global_active_power))
    
-    png(file = "plot1.png")
+    png(file = "plot1.png", width = 480, height = 480)
     hist(dt$Global_active_power, col = "red",
          ylab = "Frequnecy", xlab = "Global Activity Power(Kilowatts)", 
          main  ="Global Activiy Power", cex.lab = 0.7)
