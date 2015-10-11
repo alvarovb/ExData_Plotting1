@@ -17,7 +17,6 @@ plot1 <- function() {
          ylab = "Frequnecy", xlab = "Global Activity Power(Kilowatts)", 
          main  ="Global Activiy Power", cex.lab = 0.7)
     
-    dev.copy(png, file = "plot1.png") 
-    
-    
+    dev.off()
+
 }

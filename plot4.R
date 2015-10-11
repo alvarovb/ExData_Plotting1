@@ -15,9 +15,9 @@ plot4 <- function() {
     dt$Sub_metering_1 <- as.numeric(as.character(dt$Sub_metering_1))
     dt$Sub_metering_2 <- as.numeric(as.character(dt$Sub_metering_2))
     dt$Sub_metering_3 <- as.numeric(as.character(dt$Sub_metering_3))
-    dt$Global_active_power <- as.numeric(as.character(dt$Global_active_power))
     dt$Voltage <- as.numeric(as.character(dt$Voltage))
     dt$Global_reactive_power <- as.numeric(as.character(dt$Global_reactive_power))
+    dt$Date <- strptime(paste(dt$Date, dt$Time), "%d/%m/%Y %H:%M:%S")
     
     png(file = "plot4.png")
     par(mfrow = c(2, 2))
