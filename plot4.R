@@ -4,7 +4,7 @@ plot4 <- function() {
         dir.create("data")
         url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
         download.file(url, dest="./data/dataset.zip", method = "curl") 
-        unzip (".data/dataset.zip", exdir = "./data")
+        unzip ("./data/dataset.zip", exdir = "./data")
     }
     
     dt <- read.csv2(file = "data/household_power_consumption.txt", na.strings = "?")
