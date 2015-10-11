@@ -7,7 +7,7 @@ plot1 <- function() {
    
     hist(dt$Global_active_power, col = "red",
          ylab = "Frequnecy", xlab = "Global Activity Power(Kilowatts)", 
-         main  ="GLobal Activiy Power")
+         main  ="Global Activiy Power", cex.lab = 0.7)
     
     dev.copy(png, file = "plot1.png") 
     dev.off()
